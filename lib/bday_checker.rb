@@ -11,4 +11,12 @@ class BdayChecker
     @day == @today.day && @month == @today.month
   end
 
+  def how_long
+    if @month > @today.month || (@month == @today.month && @day > @today.day)
+      birthday = Date.parse("#{@today.year}-#{@month}-#{@day}")
+    else
+      birthday = Date.parse("#{@today.year + 1}-#{@month}-#{@day}")
+    end
+    (birthday - @today).to_i 
+  end
 end
