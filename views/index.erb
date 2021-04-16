@@ -1,37 +1,55 @@
 <html>
   <head>
     <title>Birthday!</title>
+    <style>
+      body {
+        background-color: rgb(179, 252, 251);
+        
+          }
+      div {
+        text-align: center;
+      }
+      .cake_img {
+        position: relative; 
+        top: -100px;
+        left: -400px; /* Moves the image 2px closer to the top of the page */
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello there!</h1> 
-    <form action="/answer" method='post'>
-      <p>
-        <label for="name"> <h2> What is your name? </h2></label> 
-        <input type="text" name='name'> 
-      </p>
-      <h2> When is your birthday? </h2>
-      <p>
-        <label for="day"> Day: </label>
-        <input type="number" name='day' min='1' max='31'>
-        <label for="month"> Month: </label>
-        <select name="month" id="month">
-          <option value="1"> January </option>
-          <option value="2"> February </option>
-          <option value="3"> March </option>
-          <option value="4"> April </option>
-          <option value="5"> May </option>
-          <option value="6"> June </option>
-          <option value="7"> July </option>
-          <option value="8"> August </option>
-          <option value="9"> September </option>
-          <option value="10"> October </option>
-          <option value="11"> November </option>
-          <option value="12"> December </option>
-        </select> 
-      </p>
-      <input type="submit" value='Go!'>
-    </form>
+    <div>
+      <br><br><br><br><br><br>
+      <h1>Hello there!</h1> 
+      <form action="/answer" method='post'>
+        <p>
+          <label for="name"> <h2> What is your name? </h2></label> 
+          <input type="text" name='name'> 
+        </p>
+        <h2> When is your birthday? </h2>
+        <p>
+          <label for="day"> Day: </label>
+          <input type="number" name='day' min='1' max='31'>
+          <label for="month"> Month: </label>
+          <select name="month" id="month">
+            <option value="1"> January </option>
+            <option value="2"> February </option>
+            <option value="3"> March </option>
+            <option value="4"> April </option>
+            <option value="5"> May </option>
+            <option value="6"> June </option>
+            <option value="7"> July </option>
+            <option value="8"> August </option>
+            <option value="9"> September </option>
+            <option value="10"> October </option>
+            <option value="11"> November </option>
+            <option value="12"> December </option>
+          </select> 
+        </p>
+        <input type="submit" value='Go!'>
+      </form>
+    </div>
+    <div class='cake_img'>
+      <img src="https://www.pngjoy.com/pngl/6/229771_birthday-cake-birthday-cake-clipart-no-background-transparent.png" width='400'>
+    </div>
   </body>
 </html>
-
-<%# Variable days for months %>

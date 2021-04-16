@@ -1,8 +1,15 @@
 <html>
   <head>
     <title> It's not your birthday... </title>
+    <style>
+      body {
+        background-color: rgb(179, 252, 251);
+        text-align: center;
+          }
+    </style>
   </head>
   <body>
+    <br><br><br><br><br><br>
     <h2> Your birthday will be in <%= @days_left %> day<%= 's' if @days_left != 1 %>, <%= @name %> </h2>
     <form action="/">
       <input type="submit" value="Return to home">
